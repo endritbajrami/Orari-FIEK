@@ -27,7 +27,6 @@ public class TodoController {
     public List<Todo> getAll() {
         list.add(new Todo(output.substring(0, 10)));
         list.remove(1);
-        // int x = list.size() - 1;
         return list;
     }
 
