@@ -60,8 +60,20 @@ export default class SchedulesList extends Component {
   scheduleList() {
     return this.state.schedules.map((currentschedule) => {
       if (
-        this.SemestriSS === "Semestri 4" &&
-        currentschedule.semester === "IV"
+        this.SemestriSS === "Semestri 1" &&
+        currentschedule.semester === "I"
+      ) {
+        return (
+          <Schedule
+            schedule={currentschedule}
+            deleteSchedule={this.deleteSchedule}
+            key={currentschedule._id}
+          />
+        );
+      }
+      if (
+        this.SemestriSS === "Semestri 2" &&
+        currentschedule.semester === "II"
       ) {
         return (
           <Schedule
@@ -74,6 +86,42 @@ export default class SchedulesList extends Component {
       if (
         this.SemestriSS === "Semestri 3" &&
         currentschedule.semester === "III"
+      ) {
+        return (
+          <Schedule
+            schedule={currentschedule}
+            deleteSchedule={this.deleteSchedule}
+            key={currentschedule._id}
+          />
+        );
+      }
+      if (
+        this.SemestriSS === "Semestri 4" &&
+        currentschedule.semester === "IV"
+      ) {
+        return (
+          <Schedule
+            schedule={currentschedule}
+            deleteSchedule={this.deleteSchedule}
+            key={currentschedule._id}
+          />
+        );
+      }
+      if (
+        this.SemestriSS === "Semestri 5" &&
+        currentschedule.semester === "VI"
+      ) {
+        return (
+          <Schedule
+            schedule={currentschedule}
+            deleteSchedule={this.deleteSchedule}
+            key={currentschedule._id}
+          />
+        );
+      }
+      if (
+        this.SemestriSS === "Semestri 6" &&
+        currentschedule.semester === "VI"
       ) {
         return (
           <Schedule
