@@ -4,7 +4,7 @@ import axios from "axios";
 
 const DataP = (props) => (
   <Link to="/listasot" className="nav-link">
-    Data Sot {props.dataV.date}
+    Orari Sot {props.dataV.date}
   </Link>
 );
 
@@ -55,9 +55,9 @@ export default class Navbar extends Component {
               </Link>
             </li>
             <li className="navbar-item">
-              <Link to="/chat" className="nav-link">
+              <a href="http://localhost:5555" className="nav-link">
                 Takimet
-              </Link>
+              </a>
             </li>
             <li className="navbar-item" style={{ align: "right" }}>
               {this.kohaShow()}

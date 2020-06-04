@@ -109,7 +109,7 @@ export default class SchedulesList extends Component {
       }
       if (
         this.SemestriSS === "Semestri 5" &&
-        currentschedule.semester === "VI"
+        currentschedule.semester === "V"
       ) {
         return (
           <Schedule

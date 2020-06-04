@@ -7,7 +7,6 @@ import SchedulesList from "./components/schedules-list.component";
 import EditSchedule from "./components/edit-schedule.component";
 import CreateSchedule from "./components/create-schedule.component";
 import CreateUser from "./components/create-user.component";
-import Chat from "./components/chat.component";
 import ListaSot from "./components/lista-sot.component";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="/edit/:id" component={EditSchedule} />
         <Route path="/create" component={CreateSchedule} />
         <Route path="/user" component={CreateUser} />
-        <Route path="/chat" component={Chat} />
         <Route path="/listasot" component={ListaSot} />
       </div>
     </Router>
